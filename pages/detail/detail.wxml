@@ -1,0 +1,17 @@
+<view class="container">
+    <view class="title">{{article.title}}</view>
+    <view class="meta-header">
+        <text class="author">{{article.author}}</text>
+        <text class="posted-date">{{article.posted_at}}</text>
+    </view>
+ <view class="content">
+    <!-- <image lazy-load='true' style='max-width:100%;max-height:200px;' wx-if="article.image" src='{{article.image}}'></image> -->
+    <import src="../components/wxParse/wxParse.wxml"/>
+    <template is="wxParse" data="{{wxParseData:article_content.nodes}}"/>
+</view>
+    <view class="meta-footer">
+        <text class="views">{{article.views}}</text>
+        <text class="votes">{{article.votes}}</text>
+    </view>
+    <text class="info" wx:if="{{info}}">{{info}}</text>
+</view>

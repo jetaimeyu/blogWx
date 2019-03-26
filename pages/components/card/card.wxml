@@ -1,0 +1,15 @@
+<view class="card">
+    <text class="title">{{title}}</text>
+    <view class="content-area">
+        <view class="left-area">
+            <text class="card-content">{{content}}</text>
+            <view class="info-area">
+                <text class="iconriqi">{{date}}</text>
+                <text class="iconliulan">{{views}}</text>
+            </view>
+        </view>
+        <view class="right-area">
+            <image src='{{thumbnail}}' class="thumbnail" mode="aspectFill"/>
+        </view>
+    </view>
+</view>
