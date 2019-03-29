@@ -26,7 +26,7 @@ Page({
         title: '加载中',
       })
       wx.request({
-        url: `http://blog.test/api/v1/article/${that.data.article.id}`,
+        url: `https://blog.jetaime.top/api/v1/article/${that.data.article.id}`,
         success:function(res){
           console.log('dd', res)
             that.setData({
