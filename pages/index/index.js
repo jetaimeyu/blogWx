@@ -21,7 +21,7 @@ Page({
       var that = this;
       wx.request({
     
-        url: "https://blog.jetaime.top/api/v1/articles?page=${that.data.currentPage}",
+        url: `https://blog.jetaime.top/api/v1/articles?page=${that.data.currentPage}`,
         method:"get",
         success:function(res){
             if(res.data.message == "success"){
